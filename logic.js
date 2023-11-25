@@ -27,3 +27,5 @@
             passwordBox.select()
             document.execCommand('copy')
         }
+
+        
