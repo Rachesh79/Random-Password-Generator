@@ -24,8 +24,10 @@ function Gpassword() {
 }
 
 function CopyPassword() {
-    var passwordBox = document.getElementById("passwordBox");
+    var passwordBox = document.getElementById("password");
     passwordBox.select();
     passwordBox.setSelectionRange(0,12)
     navigator.clipboard.writeText(passwordBox.value)
+    alert("Copied Successfully: "+passwordBox.value)
+    passwordBox.value = ""
 }
