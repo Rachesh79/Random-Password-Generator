@@ -28,6 +28,6 @@ function CopyPassword() {
     passwordBox.select();
     passwordBox.setSelectionRange(0,12)
     navigator.clipboard.writeText(passwordBox.value)
-    alert("Copied Successfully: "+passwordBox.value)
+    alert("Copied Successfully : "+passwordBox.value)
     passwordBox.value = ""
 }
